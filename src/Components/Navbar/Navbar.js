@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import {Button} from '../../globalStyles'
@@ -26,6 +26,34 @@ const Navbar = () => {
     
     window.addEventListener('resize', showButton);
 
+    let servicesReference = useRef(null);
+    let CurrentWidth = window.innerWidth;
+
+    
+
+    const scrollToProducts = () => {
+        if(CurrentWidth <=1024){
+            window.scrollTo({ top: 3700, behavior: "smooth" });
+        }else{
+            window.scrollTo({ top: 2350, behavior: "smooth" });
+        };
+    }
+
+    const scrollToHome = () => 
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+    const scrollToServices = () => {
+    if(CurrentWidth <=1024){
+        window.scrollTo({ top: 1150, behavior: "smooth" });
+    }else{
+        window.scrollTo({ top: 850, behavior: "smooth" });
+    };
+}
+        const scrollToSignUp = () => 
+        window.scrollTo({ top: 10000, behavior: "smooth" });
+    
+
+    
 
     return (
         <>
@@ -34,7 +62,7 @@ const Navbar = () => {
                     <NavbarContainer>
                         <NavLogo to="/">
                             <NavIcon/>
-                                Maksym Ushkanov
+                                FLKQ
                             </NavLogo>
                             <MobileIcon onClick = {handleClick} 
                             
@@ -42,22 +70,22 @@ const Navbar = () => {
                             </MobileIcon>
                             <NavMenu onCLick = {handleClick} click={click}> 
                                 <NavItem>
-                                    <NavLinks to = '/'>Home</NavLinks>
+                                    <NavLinks to = '/' onClick = {() => {scrollToHome(); handleClick() }}>Home</NavLinks>
                                 </NavItem>                                                      
                                 <NavItem>
-                                    <NavLinks to = '/services'>Services</NavLinks>
+                                    <NavLinks to = '/' onClick= {() => {scrollToServices(); handleClick()}} >Services</NavLinks>
                                 </NavItem>                                                       
                                 <NavItem>
-                                    <NavLinks to = '/products'>Products</NavLinks>
+                                    <NavLinks to = '/' onClick= {() => {scrollToProducts(); handleClick()}}>Products</NavLinks>
                                 </NavItem>
                                 <NavItemBtn>
                                     {button ? (
-                                        <NavBtnLink to="/sign-up">
-                                            <Button primary>Sign Up</Button>
+                                        <NavBtnLink to="/">
+                                            <Button primary onClick= {() => {scrollToSignUp(); handleClick()}}>Sign Up</Button>
                                         </NavBtnLink>
                                     ): (
-                                        <NavBtnLink to="/sign-up">
-                                            <Button fontBig primary>
+                                        <NavBtnLink to="/">
+                                            <Button fontBig primary onClick= {() => {scrollToSignUp(); handleClick()}}>
                                                 Sign Up
                                             </Button>
                                         </NavBtnLink>

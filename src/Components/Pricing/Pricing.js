@@ -11,7 +11,7 @@ const Pricing = () => {
         <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
         <PricingSection>
             <PricingWrapper>
-                <PricingHeader>Our Services</PricingHeader>
+                <PricingHeader>Our Products</PricingHeader>
                     <PricingContainer>
                         <PricingCard to='/sign-up'>
                             <PricingCardInfo>
@@ -38,20 +38,20 @@ const Pricing = () => {
                         <PricingCard>
                             <PricingCardInfo>
                             <PricingCardIcon>
-                                <FaCookieBite/>
+                                <FaCookie/>
                             </PricingCardIcon>
                             <PricingCardPack>
-                                Starter Pack
+                                Advanced Pack
                             </PricingCardPack>
                             <PricingCardPrice>
-                                $99.99
+                                $149.99
                             </PricingCardPrice>
                             <PricingCardPeriod>
                                 Per Month
                             </PricingCardPeriod>
                             <PricingCardFeatures>
-                                <PricingCardFeature>100 New Users</PricingCardFeature>
-                                <PricingCardFeature>$10,000 Budget</PricingCardFeature>
+                                <PricingCardFeature>500 New Users</PricingCardFeature>
+                                <PricingCardFeature>$50,000 Budget</PricingCardFeature>
                                 <PricingCardFeature>Retargeting Analytics</PricingCardFeature>                                
                             </PricingCardFeatures>
                             <Button primary>Choose Plan</Button>
@@ -60,20 +60,20 @@ const Pricing = () => {
                         <PricingCard>
                             <PricingCardInfo>
                             <PricingCardIcon>
-                                <FaCookieBite/>
+                                <FaDollarSign/>
                             </PricingCardIcon>
                             <PricingCardPack>
                                 Starter Pack
                             </PricingCardPack>
                             <PricingCardPrice>
-                                $99.99
+                                $299.99
                             </PricingCardPrice>
                             <PricingCardPeriod>
                                 Per Month
                             </PricingCardPeriod>
                             <PricingCardFeatures>
-                                <PricingCardFeature>100 New Users</PricingCardFeature>
-                                <PricingCardFeature>$10,000 Budget</PricingCardFeature>
+                                <PricingCardFeature>3000 New Users</PricingCardFeature>
+                                <PricingCardFeature>$100,000 Budget</PricingCardFeature>
                                 <PricingCardFeature>Retargeting Analytics</PricingCardFeature>                                
                             </PricingCardFeatures>
                             <Button primary>Choose Plan</Button>

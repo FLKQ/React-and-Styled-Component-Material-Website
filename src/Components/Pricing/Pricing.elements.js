@@ -27,12 +27,20 @@ font-size: 48px;
 margin-bottom: 24px;
 text-align: center;
 
+@media screen and (max-width: 430px){
+    padding-bottom: 50px;
+}
 `;
 
 export const PricingContainer = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media screen and (max-width: 430px){
+    display: flex;
+    flex-direction: column;
+}
 `;
 
 export const PricingCardInfo = styled.div`
@@ -57,7 +65,7 @@ border-radius: 4px;
 }
 `;
 
-export const PricingCardIcon = styled(FaCookieBite)`
+export const PricingCardIcon = styled.div`
 margin: 24px 0;
 
 `;

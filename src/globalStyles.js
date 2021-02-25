@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 `;
 
 export const Container = styled.div`
