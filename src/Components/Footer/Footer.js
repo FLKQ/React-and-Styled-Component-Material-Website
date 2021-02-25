@@ -25,7 +25,7 @@ const Footer = () => {
                             <FooterLinkTitle>
                                 About Us
                             </FooterLinkTitle>
-                            <FooterLink to = '/sign-up'>How It Works</FooterLink>
+                            <FooterLink to = '/'>How It Works</FooterLink>
                             <FooterLink to = '/'>Testimonials</FooterLink>
                             <FooterLink to = '/'>Careers</FooterLink>
                             <FooterLink to = '/'>Investors</FooterLink>
@@ -35,7 +35,7 @@ const Footer = () => {
                             <FooterLinkTitle>
                                 Сontact Us
                             </FooterLinkTitle>
-                            <FooterLink to = '/sign-up'>How It Works</FooterLink>
+                            <FooterLink to = '/'>How It Works</FooterLink>
                             <FooterLink to = '/'>Testimonials</FooterLink>
                             <FooterLink to = '/'>Careers</FooterLink>
                             <FooterLink to = '/'>Investors</FooterLink>
@@ -47,7 +47,7 @@ const Footer = () => {
                             <FooterLinkTitle>
                                 Videos
                             </FooterLinkTitle>
-                            <FooterLink to = '/sign-up'>How It Works</FooterLink>
+                            <FooterLink to = '/'>How It Works</FooterLink>
                             <FooterLink to = '/'>Testimonials</FooterLink>
                             <FooterLink to = '/'>Careers</FooterLink>
                             <FooterLink to = '/'>Investors</FooterLink>
@@ -57,7 +57,7 @@ const Footer = () => {
                             <FooterLinkTitle>
                                 Social Media
                             </FooterLinkTitle>
-                            <FooterLink to = '/sign-up'>How It Works</FooterLink>
+                            <FooterLink to = '/'>How It Works</FooterLink>
                             <FooterLink to = '/'>Testimonials</FooterLink>
                             <FooterLink to = '/'>Careers</FooterLink>
                             <FooterLink to = '/'>Investors</FooterLink>
